@@ -25,15 +25,10 @@ We felt that the scale and scope of the project was such that many more options 
 ---
 ## SECTION 4 : VIDEO OF SYSTEM MODELLING & USE CASE DEMO
 
-`<Github File Link>` :
-https://github.com/aivoyagers/IRS-MR-2019-01-19-IS1PT-GRP-aiVoyagers-S3P-smart-sec-school-proposer/blob/master/Videos/S3P-smart-sec-school.mp4
-
 
 ---
 ## SECTION 5 : USER GUIDE
 IRS((Intelligent Rapid Shuttle) is a web based shuttle services optimizer. It would be used by the service provider to achieve the shortest overall distance between locations. The routes would be shown visually on the google map to enable the service provider to navigate easily. 
-
-`<Github File Link>` : https://github.com/aivoyagers/IRS-MR-2019-01-19-IS1PT-GRP-aiVoyagers-S3P-smart-sec-school-proposer/blob/master/UserGuide/Smart%20Secondary%20School%20Proposer%20User%20Guide.pdf
 
 
 ---
@@ -51,8 +46,6 @@ IRS((Intelligent Rapid Shuttle) is a web based shuttle services optimizer. It wo
 * Conclusion
 * Improvements
 
-
-`<Github File Link>` : https://github.com/aivoyagers/IRS-MR-2019-01-19-IS1PT-GRP-aiVoyagers-S3P-smart-sec-school-proposer/blob/master/ProjectReport/Smart%20Secondary%20School%20Proposer%20Project%20Report.pdf
 
 
 ---
