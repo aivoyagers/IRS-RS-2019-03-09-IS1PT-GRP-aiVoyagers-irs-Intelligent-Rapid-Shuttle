@@ -28,7 +28,7 @@ We felt that the scale and scope of the project was such that many more options 
 
 ---
 ## SECTION 4 : VIDEO OF SYSTEM MODELLING & USE CASE DEMO
-[![IRS Intelligent Rapid Shuttle](SystemCodes/static/IRS-Output.jpg)](Video/IRS-Video.mp4 "IRS Shuttle Service")
+[![IRS Intelligent Rapid Shuttle](SystemCodes/static/IRS-Output.jpg)](https://youtu.be/ztnZaiexNbs "IRS Shuttle Service")
 
 ---
 ## SECTION 5 : USER GUIDE
