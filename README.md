@@ -1,10 +1,13 @@
 ﻿## SECTION 1 : PROJECT TITLE
 ## Intelligent Rapid Shuttle (IRS) System
 
+<img src="SystemCodes/static/IRS-Title-Picture.png"
+     style="float: left; margin-right: 0px;" /> 
+<!---
 <img src="SystemCodes/static/IRS-Vehicle.png"
      style="float: left; margin-right: 0px;" width="400" /> <img src="SystemCodes/static/IRS-Systems-Architecture.png"
      style="float: left; margin-right: 0px;" width="400" />
-
+-->
 ## SECTION 2 : EXECUTIVE SUMMARY / PAPER ABSTRACT
 In Singapore shuttle services to ferry students from their home to school and back is quite common. Probably every Singaporean would have travelled in a shuttle service during their student days.
 
