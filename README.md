@@ -66,12 +66,11 @@ http://localhost:8080/intelligentrapidshuttle-0.0.1-SNAPSHOT/IRSIndex.jsp
 ## SECTION 7 : MISCELLANEOUS
 
 ### 7.1 Domain Class Diagram  
-[![IRS Intelligent Rapid Shuttle](SystemCodes/static/IRS-Class-Diagram.png)]
-
+<img src="SystemCodes/static/IRS-Class-Diagram.png"
+     style="float: left; margin-right: 0px;" /> 
 
 ### 7.2 IRS Systems Artchitecture  
-[![IRS Intelligent Rapid Shuttle](SystemCodes/static/IRS-Systems-Architecture.png)]
-
-
+<img src="SystemCodes/static/IRS-Systems-Architecture.png"
+     style="float: left; margin-right: 0px;" /> 
 
 ---
