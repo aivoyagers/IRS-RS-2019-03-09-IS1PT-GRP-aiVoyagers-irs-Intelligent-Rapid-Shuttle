@@ -20,7 +20,7 @@ We believe that many other Singapore parents would also be finding similar diffi
 
 We felt that the scale and scope of the project was such that many more options for optimization could have been explored e.g. the amount of time taken for students to reach school taking traffic conditions in to consideration on top of travel distance optimized. However, given the time limitations we were happy with the solution we were able to achieve as part of this project.  
 
-
+Project Git Repository : https://github.com/aivoyagers/IRS-RS-2019-03-09-IS1PT-GRP-aiVoyagers-irs-Intelligent-Rapid-Shuttle.git
 
 ---
 ## SECTION 3 : CREDITS / PROJECT CONTRIBUTION
