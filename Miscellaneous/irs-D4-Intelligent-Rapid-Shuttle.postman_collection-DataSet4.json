@@ -1,0 +1,238 @@
+{
+	"info": {
+		"_postman_id": "e1355337-832a-4956-ba37-debf281eede5",
+		"name": "irs10-D4-Intelligent-Rapid-Shuttle",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "irsSolutionContainers",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "wbadmin",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "wbadmin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-KIE-ContentType",
+						"type": "text",
+						"value": "xstream"
+					},
+					{
+						"key": "contentType",
+						"type": "text",
+						"value": "application/xml"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/kie-server/services/rest/server/containers/irs-Intelligent-Rapid-Shuttle_1.0.0/solvers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"kie-server",
+						"services",
+						"rest",
+						"server",
+						"containers",
+						"irs-Intelligent-Rapid-Shuttle_1.0.0",
+						"solvers"
+					]
+				},
+				"description": "optaCloudContainers\t"
+			},
+			"response": []
+		},
+		{
+			"name": "Put-Register-irsSolutionSolver",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "wbadmin",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "wbadmin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "X-KIE-ContentType",
+						"value": "xstream",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<solver-instance>\n  <solver-config-file>com/irsspace/irs/irsSolutionSolverConfig.solver.xml</solver-config-file>\n</solver-instance>"
+				},
+				"url": {
+					"raw": "http://localhost:8080/kie-server/services/rest/server/containers/irs-Intelligent-Rapid-Shuttle_1.0.0/solvers/irsSolutionSolver2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"kie-server",
+						"services",
+						"rest",
+						"server",
+						"containers",
+						"irs-Intelligent-Rapid-Shuttle_1.0.0",
+						"solvers",
+						"irsSolutionSolver2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post-irsSolutionSolver-Solving",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "wbadmin",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "wbadmin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/xml",
+						"type": "text"
+					},
+					{
+						"key": "X-KIE-ContentType",
+						"value": "xstream",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<com.irsspace.irs.irsSolution>\n\t<locationMatrixList>\n\t\t<com.irsspace.irs.irsLocationMatrix>\n\t\t\t<startLocation>\n\t\t\t\t\t<name>Bishan Loft Block 31</name>\n\t\t\t</startLocation>\n\t\t\t<toLocation>\n\t\t\t\t\t<name>Changkat Changi Secondary School</name>\n\t\t\t</toLocation>\n\t\t\t<distance>15000</distance>\n\t\t</com.irsspace.irs.irsLocationMatrix>\t\n\t</locationMatrixList>\n    <schoolList>\n        <com.irsspace.irs.irsPickupDropoffParticulars>\n            <name>Changkat Changi Secondary School</name>\n            <location>\n                <name>Changkat Changi Secondary School</name>\n                <latitude>1.340171</latitude>\n                <longitude>103.951992</longitude>\n            </location>\n        </com.irsspace.irs.irsPickupDropoffParticulars>\n        <com.irsspace.irs.irsPickupDropoffParticulars>\n            <name>Punggol Secondary School</name>\n            <location>\n                <name>Punggol Secondary School</name>\n                <latitude>1.407663</latitude>\n                <longitude>103.908624</longitude>\n            </location>\n        </com.irsspace.irs.irsPickupDropoffParticulars>\n        <com.irsspace.irs.irsPickupDropoffParticulars>\n            <name>Jurong Secondary School</name>\n            <location>\n                <name>Jurong Secondary School</name>\n                <latitude>1.330515</latitude>\n                <longitude>103.724258</longitude>\n            </location>\n        </com.irsspace.irs.irsPickupDropoffParticulars>\n\t\t<com.irsspace.irs.irsPickupDropoffParticulars>\n            <name>Juying Secondary School</name>\n            <location>\n                <name>Juying Secondary School</name>\n                <latitude>1.339888</latitude>\n                <longitude>103.687205</longitude>\n            </location>\n        </com.irsspace.irs.irsPickupDropoffParticulars>\n\t\t<com.irsspace.irs.irsPickupDropoffParticulars>\n            <name>Riverside Secondary School</name>\n            <location>\n                <name>Riverside Secondary School</name>\n                <latitude>1.443531</latitude>\n                <longitude>103.788624</longitude>\n            </location>\n        </com.irsspace.irs.irsPickupDropoffParticulars>\n        <com.irsspace.irs.irsPickupDropoffParticulars>\n            <name>Raffles Institution</name>\n            <location>\n                <name>Raffles Institution</name>\n                <latitude>1.346979</latitude>\n                <longitude>103.843417</longitude>\n            </location>\n        </com.irsspace.irs.irsPickupDropoffParticulars>\n        <com.irsspace.irs.irsPickupDropoffParticulars>\n            <name>Nan Hua High School</name>\n            <location>\n                <name>Nan Hua High School</name>\n                <latitude>1.308489</latitude>\n                <longitude>103.768901</longitude>\n            </location>\n        </com.irsspace.irs.irsPickupDropoffParticulars>\n        <com.irsspace.irs.irsPickupDropoffParticulars>\n            <name>Compassvale Secondary School</name>\n            <location>\n                <name>Compassvale Secondary School</name>\n                <latitude>1.396588</latitude>\n                <longitude>103.899726</longitude>\n            </location>\n        </com.irsspace.irs.irsPickupDropoffParticulars>\n    </schoolList>\n    <studentList>\n        <com.irsspace.irs.irsPickupDropoffParticulars>\n            <name>Student 1</name>\n            <location>\n                <name>Student 1</name>\n                <latitude>1.330096</latitude>\n                <longitude>103.714467</longitude>\n            </location>\n            <dropoffLocationName>Jurong Secondary School</dropoffLocationName>\n        </com.irsspace.irs.irsPickupDropoffParticulars>\n        <com.irsspace.irs.irsPickupDropoffParticulars>\n            <name>Student 2</name>\n            <dropoffLocationName>Punggol Secondary School</dropoffLocationName>\n            <location>\n                <name>Student 2</name>\n                <latitude>1.372813</latitude>\n                <longitude>103.943608</longitude>\n            </location>\n        </com.irsspace.irs.irsPickupDropoffParticulars>\n        <com.irsspace.irs.irsPickupDropoffParticulars>\n            <name>Student 3</name>\n            <dropoffLocationName>Riverside Secondary School</dropoffLocationName>\n            <location>\n                <name>Student 3</name>\n                <latitude>1.455203</latitude>\n                <longitude>103.830688</longitude>\n            </location>\n        </com.irsspace.irs.irsPickupDropoffParticulars>\n        <com.irsspace.irs.irsPickupDropoffParticulars>\n            <name>Student 4</name>\n            <dropoffLocationName>Jurong Secondary School</dropoffLocationName>\n            <location>\n                <name>Student 4</name>\n                <latitude>1.346571</latitude>\n                <longitude>103.767343</longitude>\n            </location>\n        </com.irsspace.irs.irsPickupDropoffParticulars>\n        <com.irsspace.irs.irsPickupDropoffParticulars>\n            <name>Student 5</name>\n            <location>\n                <name>Student 5</name>\n                <latitude>1.293414</latitude>\n                <longitude>103.629989</longitude>\n            </location>\n            <dropoffLocationName>Juying Secondary School</dropoffLocationName>\n        </com.irsspace.irs.irsPickupDropoffParticulars>\n        <com.irsspace.irs.irsPickupDropoffParticulars>\n            <name>Student 6</name>\n            <location>\n                <name>Student 6</name>\n                <latitude>1.428945</latitude>\n                <longitude>103.756524</longitude>\n            </location>\n            <dropoffLocationName>Riverside Secondary School</dropoffLocationName>\n        </com.irsspace.irs.irsPickupDropoffParticulars>\n        <com.irsspace.irs.irsPickupDropoffParticulars>\n            <name>Student 8</name>\n            <dropoffLocationName>Juying Secondary School</dropoffLocationName>\n            <location>\n                <name>Student 8</name>\n                <latitude>1.384903</latitude>\n                <longitude>103.766444</longitude>\n            </location>\n        </com.irsspace.irs.irsPickupDropoffParticulars>\n        <com.irsspace.irs.irsPickupDropoffParticulars>\n            <name>Student 9</name>\n            <dropoffLocationName>Jurong Secondary School</dropoffLocationName>\n            <location>\n                <name>Student 9</name>\n                <latitude>1.321344</latitude>\n                <longitude>103.781071</longitude>\n            </location>\n        </com.irsspace.irs.irsPickupDropoffParticulars>\n        <com.irsspace.irs.irsPickupDropoffParticulars>\n            <name>Student 10</name>\n            <dropoffLocationName>Riverside Secondary School</dropoffLocationName>\n            <location>\n                <name>Student 10</name>\n                <latitude>1.416759</latitude>\n                <longitude>103.833433</longitude>\n            </location>\n        </com.irsspace.irs.irsPickupDropoffParticulars>\n        <com.irsspace.irs.irsPickupDropoffParticulars>\n            <name>Student 11</name>\n            <dropoffLocationName>Riverside Secondary School</dropoffLocationName>\n            <location>\n                <name>Student 11</name>\n                <latitude>1.387071</latitude>\n                <longitude>103.752745</longitude>\n            </location>\n        </com.irsspace.irs.irsPickupDropoffParticulars>\n        <com.irsspace.irs.irsPickupDropoffParticulars>\n            <name>Student 14</name>\n            <dropoffLocationName>Punggol Secondary School</dropoffLocationName>\n            <location>\n                <name>Student 14</name>\n                <latitude>1.323326</latitude>\n                <longitude>103.949737</longitude>\n            </location>\n        </com.irsspace.irs.irsPickupDropoffParticulars>\t\t\n        <com.irsspace.irs.irsPickupDropoffParticulars>\n            <name>Student 15</name>\n            <dropoffLocationName>Jurong Secondary School</dropoffLocationName>\n            <location>\n                <name>Student 15</name>\n                <latitude>1.331640</latitude>\n                <longitude>103.701591</longitude>\n            </location>\n        </com.irsspace.irs.irsPickupDropoffParticulars>\t\t\n        <com.irsspace.irs.irsPickupDropoffParticulars>\n            <name>Student 16</name>\n            <dropoffLocationName>Changkat Changi Secondary School</dropoffLocationName>\n            <location>\n                <name>Student 16</name>\n                <latitude>1.305639</latitude>\n                <longitude>103.907903</longitude>\n            </location>\n        </com.irsspace.irs.irsPickupDropoffParticulars>\t\t\n        <com.irsspace.irs.irsPickupDropoffParticulars>\n            <name>Student 17</name>\n            <dropoffLocationName>Jurong Secondary School</dropoffLocationName>\n            <location>\n                <name>Student 17</name>\n                <latitude>1.300406</latitude>\n                <longitude>103.788796</longitude>\n            </location>\n        </com.irsspace.irs.irsPickupDropoffParticulars>\t\t\n        <com.irsspace.irs.irsPickupDropoffParticulars>\n            <name>Student 18</name>\n            <location>\n                <name>Student 18</name>\n                <latitude>1.269622</latitude>\n                <longitude>103.827993</longitude>\n            </location>\n            <dropoffLocationName>Raffles Institution</dropoffLocationName>\n        </com.irsspace.irs.irsPickupDropoffParticulars>\n        <com.irsspace.irs.irsPickupDropoffParticulars>\n            <name>Student of Bishan Loft</name>\n            <location>\n                <name>Bishan Loft Block 31</name>\n                <latitude>1.347593</latitude>\n                <longitude>103.852434</longitude>\n            </location>\n            <dropoffLocationName>Raffles Institution</dropoffLocationName>\n        </com.irsspace.irs.irsPickupDropoffParticulars>\n        <com.irsspace.irs.irsPickupDropoffParticulars>\n            <name>Student of Yew Tee</name>\n            <dropoffLocationName>Nan Hua High School</dropoffLocationName>\n            <location>\n                <name>Block 632 Yew Tee</name>\n                <latitude>1.396750</latitude>\n                <longitude>103.748564</longitude>\n            </location>\n        </com.irsspace.irs.irsPickupDropoffParticulars>\n        <com.irsspace.irs.irsPickupDropoffParticulars>\n            <name>Student of Changi Airport</name>\n            <dropoffLocationName>Raffles Institution</dropoffLocationName>\n            <location>\n                <name>Changi Airport</name>\n                <latitude>1.355246</latitude>\n                <longitude>103.988475</longitude>\n            </location>\n        </com.irsspace.irs.irsPickupDropoffParticulars>\n        <com.irsspace.irs.irsPickupDropoffParticulars>\n            <name>Student of Neo Tiew Rd</name>\n            <dropoffLocationName>Nan Hua High School</dropoffLocationName>\n            <location>\n                <name>161 Newo Tiew Rd</name>\n                <latitude>1.430672</latitude>\n                <longitude>103.723253</longitude>\n            </location>\n        </com.irsspace.irs.irsPickupDropoffParticulars>\n        <com.irsspace.irs.irsPickupDropoffParticulars>\n            <name>Student of Oassis Terraces</name>\n            <location>\n                <name>Oasis Terraces</name>\n                <latitude>1.402721</latitude>\n                <longitude>103.912795</longitude>\n            </location>\n            <dropoffLocationName>Compassvale Secondary School</dropoffLocationName>\n        </com.irsspace.irs.irsPickupDropoffParticulars>\n        <com.irsspace.irs.irsPickupDropoffParticulars>\n            <name>Student of Bayshore</name>\n            <location>\n                <name>34 Bayshore Road</name>\n                <latitude>1.313012</latitude>\n                <longitude>103.939276</longitude>\n            </location>\n            <dropoffLocationName>Raffles Institution</dropoffLocationName>\n        </com.irsspace.irs.irsPickupDropoffParticulars>\n        <com.irsspace.irs.irsPickupDropoffParticulars>\n            <name>Student of Clementi Ave 1</name>\n            <dropoffLocationName>Raffles Institution</dropoffLocationName>\n            <location>\n                <name>425 Clementi Ave 1</name>\n                <latitude>1.309749</latitude>\n                <longitude>103.771281</longitude>\n            </location>\n        </com.irsspace.irs.irsPickupDropoffParticulars>\n        <com.irsspace.irs.irsPickupDropoffParticulars>\n            <name>Student of Karissdale</name>\n            <dropoffLocationName>Raffles Institution</dropoffLocationName>\n            <location>\n                <name>Kerrisdale</name>\n                <latitude>1.313492</latitude>\n                <longitude>103.857975</longitude>\n            </location>\n        </com.irsspace.irs.irsPickupDropoffParticulars>        \n    </studentList>\n    <vehicleList>\n        <com.irsspace.irs.irsVehicle>\n            <officeLocation>\n                <name>Vehicle 1 from Downtown</name>\n                <latitude>1.380828</latitude>\n                <longitude>103.954016</longitude>\n            </officeLocation>\n            <capacity>15</capacity>\n        </com.irsspace.irs.irsVehicle>\n        <com.irsspace.irs.irsVehicle>\n            <officeLocation>\n                <name>Vehicle 2 from Jurong JEM Mall</name>\n                <latitude>1.332787</latitude>\n                <longitude>103.743121</longitude>\n            </officeLocation>\n            <capacity>12</capacity>\n        </com.irsspace.irs.irsVehicle>\n        <com.irsspace.irs.irsVehicle>\n            <officeLocation>\n                <name>Vehicle 3 from Causeway Point</name>\n                <latitude>1.436213</latitude>\n                <longitude>103.785994</longitude>\n            </officeLocation>\n            <capacity>10</capacity>\n        </com.irsspace.irs.irsVehicle>\n        <com.irsspace.irs.irsVehicle>\n            <officeLocation>\n                <name>Vehicle 4 from Paya Lebar Square</name>\n                <latitude>1.319312</latitude>\n                <longitude>103.892462</longitude>\n            </officeLocation>\n            <capacity>10</capacity>\n        </com.irsspace.irs.irsVehicle>\n    </vehicleList>\n</com.irsspace.irs.irsSolution>"
+				},
+				"url": {
+					"raw": "http://localhost:8080/kie-server/services/rest/server/containers/irs-Intelligent-Rapid-Shuttle_1.0.0/solvers/irsSolutionSolver2/state/solving",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"kie-server",
+						"services",
+						"rest",
+						"server",
+						"containers",
+						"irs-Intelligent-Rapid-Shuttle_1.0.0",
+						"solvers",
+						"irsSolutionSolver2",
+						"state",
+						"solving"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get-irsSolution-BestSolution",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "wbadmin",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "wbadmin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-KIE-ContentType",
+						"type": "text",
+						"value": "xstream"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/xml"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/kie-server/services/rest/server/containers/irs-Intelligent-Rapid-Shuttle_1.0.0/solvers/irsSolutionSolver2/bestsolution",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"kie-server",
+						"services",
+						"rest",
+						"server",
+						"containers",
+						"irs-Intelligent-Rapid-Shuttle_1.0.0",
+						"solvers",
+						"irsSolutionSolver2",
+						"bestsolution"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
