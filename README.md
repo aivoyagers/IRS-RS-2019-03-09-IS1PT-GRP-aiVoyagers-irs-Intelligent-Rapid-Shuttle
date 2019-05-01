@@ -36,6 +36,7 @@ Project Git Repository : https://github.com/aivoyagers/IRS-RS-2019-03-09-IS1PT-G
 ---
 ## SECTION 4 : VIDEO OF SYSTEM MODELLING & USE CASE DEMO
 [![IRS Intelligent Rapid Shuttle](SystemCodes/static/IRS-Output.jpg)](https://youtu.be/W3MZEjSZb8A "IRS Shuttle Service")
+Click the image above to view Video. Alternatively, you can view following the link https://github.com/aivoyagers/IRS-RS-2019-03-09-IS1PT-GRP-aiVoyagers-irs-Intelligent-Rapid-Shuttle/blob/master/Video/IRSVideo.MOV
 
 ---
 ## SECTION 5 : USER GUIDE
